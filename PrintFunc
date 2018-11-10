@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    n = int(input())
+    sum=0
+    i=10**(n-1)
+    for var in list(range(n+1)):
+        if(var!=0):
+            if(var!=n+1):
+                sum+=var*i
+                i=i/10
+    print(int(sum))
